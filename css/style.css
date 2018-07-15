@@ -1,19 +1,29 @@
-body, p{
-    margin: 0px;
-    padding: 0px;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: arial,sans-serif;
-    text-decoration: none;
 }
 
 nav{
     float: right;
 }
 
-nav ul li{
+nav ul{
+    overflow: hidden;
     list-style: none;
-    display: inline;
 }
+
+nav ul li{
+    display: inline;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+nav ul li a{
+    display: block;
+}
+
 
 nav ul li.btn1{
     background-image: url("https://ssl.gstatic.com/gb/images/i1_1967ca6a.png");
@@ -23,6 +33,32 @@ a{
     text-decoration: none;
 }
 
+div.middle {
+    clear: both;
+    width: 500px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+div.middle div img{
+    display: block;
+    width: 400px;
+    margin: auto;
+    padding: 5px 0px;
+}
+
+div.searchbar input[type="text"]{
+    width: 500px;
+    height: 30px;
+    margin: 0px auto;
+    border-radius: 0px;
+    border: 1px solid #cecece;
+}
+
+div.middle div.buttons{
+    width: 300px;
+    margin: auto;
+}
 
 footer{
     background-color: #f2f2f2;

@@ -1,3 +1,4 @@
+/* Set default values*/
 * {
     margin: 0;
     padding: 0;
@@ -9,43 +10,40 @@ html, body{
     height: 100%;
 }
 
-#container{
-    min-height: 100%;
-    position: relative;
-}
-
-
-#main{
-    overflow: auto;
-    padding-bottom: 85px;
-}
-
+/* ----- NAVIGATION BAR ----- */
 nav{
-    float: right;
+    padding: 20px;
 }
 
 nav ul{
     overflow: hidden;
     list-style: none;
+    float: right;
 }
 
 nav ul li{
-    display: inline;
+    float: left;
     text-align: center;
 }
 
 nav ul li a{
-    display: inline-block;
+    display: block;
+    padding: 5px 5px;
+    font-size: 13px;
 }
 
-
-nav ul li.btn1{
-    background-image: url("https://ssl.gstatic.com/gb/images/i1_1967ca6a.png");
+li.btn1{
+    background-image: url("../images/appicon.png");
+    background-size: cover;  
+    width: 25px;
+    height: 25px;
 }
 
 a{
     text-decoration: none;
 }
+
+/* ----- MAIN INFO ----- */
 
 div.middle {
     clear: both;
@@ -53,6 +51,7 @@ div.middle {
     text-align: center;
     margin: auto;
 
+    /* CENTER DIV VERTICAL POSITION */
     position: absolute;
     top: 50%;
     left: 50%;
@@ -107,9 +106,24 @@ div.middle div p{
     font-size: 13px;
 }
 
+/* ----- FOOTER ----- */
+
+/*This is part of keeping the footer at the bottom*/
+#container{
+    min-height: 100%;
+    position: relative;
+}
+
+#main{
+    overflow: auto;
+}
+/*Footer at the bottom*/
 
 footer{
     background-color: #f2f2f2;
+    
+    /*Footer at the bottom*/
+    position: absolute; /* Without this, the footer ends BEHIND the container, can't click on links*/
     height: 85px;
     margin-top: -85px;
     width: 100%;
@@ -135,7 +149,6 @@ footer div.right a{
 footer div.left a{
     padding: 0px 20px 0px 0px;
 }
-
 
 footer div p{
     font-size: 14px;

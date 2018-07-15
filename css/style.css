@@ -11,7 +11,9 @@ html, body{
 
 #container{
     min-height: 100%;
+    position: relative;
 }
+
 
 #main{
     overflow: auto;
@@ -30,11 +32,10 @@ nav ul{
 nav ul li{
     display: inline;
     text-align: center;
-    padding: 14px 16px;
 }
 
 nav ul li a{
-    display: block;
+    display: inline-block;
 }
 
 
@@ -49,36 +50,69 @@ a{
 div.middle {
     clear: both;
     width: 500px;
-    margin: 50px auto;
     text-align: center;
+    margin: auto;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 div.middle div img{
     display: block;
     width: 400px;
     margin: auto;
-    padding: 5px 0px;
+    padding: 0 0 10px 0;
 }
 
 div.searchbar input[type="text"]{
-    width: 500px;
-    height: 30px;
+    width: 480px;
+    height: 45px;
     margin: 0px auto;
     border-radius: 0px;
     border: 1px solid #cecece;
+    padding: 2px 15px;
+
+    /*sombra del searchbar*/
+    -webkit-box-shadow: 0px 6px 7px 0px #e6e6e6;
+    -moz-box-shadow: 0px 6px 7px 0px #e6e6e6;
+    box-shadow: 0px 4px 5px 0px #e6e6e6;
+}
+
+div.searchbar div, div.middle div p{
+    padding: 0 0 25px 0;
 }
 
 div.middle div.buttons{
-    width: 300px;
+    width: 100%px;
     margin: auto;
 }
 
+div.middle div.buttons input[type="submit"]{
+    margin: 0px 4px;
+    padding: 0 15px;
+    height: 36px;
+    line-height: 26px;
+    border-radius: 0px;
+    border: 0px;
+
+    /* font style*/
+    color: #717179;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+div.middle div p{
+    font-size: 13px;
+}
+
+
 footer{
     background-color: #f2f2f2;
-    position: relative;
     height: 85px;
     margin-top: -85px;
-    clear: both;
+    width: 100%;
 }
 
 footer div.left{

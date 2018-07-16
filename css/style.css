@@ -95,9 +95,12 @@ div.searchbar input[type="text"]{
     padding: 2px 15px;
 
     /*sombra del searchbar*/
-    -webkit-box-shadow: 0px 6px 7px 0px #e6e6e6;
-    -moz-box-shadow: 0px 6px 7px 0px #e6e6e6;
     box-shadow: 0px 4px 5px 0px #e6e6e6;
+}
+
+div.searchbar input[type="text"]:hover{
+    /*sombra del searchbar*/
+    box-shadow: 0px 4px 7px 2px #e6e6e6;
 }
 
 div.searchbar div, div.middle div p{

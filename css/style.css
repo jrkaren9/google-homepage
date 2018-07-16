@@ -75,13 +75,8 @@ div.middle {
     clear: both;
     width: 700px;
     text-align: center;
-    margin: auto;
+    margin: 150px auto 0;
 
-    /* CENTER DIV VERTICAL POSITION */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
 div.middle div img{
@@ -108,6 +103,16 @@ div.searchbar input[type="text"]{
 div.searchbar div, div.middle div p{
     padding: 0 0 25px 0;
 }
+
+/*
+div.middle div p{
+    padding: 0 0 40px 0; /*Solved footer overlapping everything else when the screen gets 
+    smaller, had to put the "Ofrecido por Google en:" inside div.searchbar, so the footer 
+    kind of "hits" the div*/
+
+    /*Found a better solution, described in footer*/ /*
+}
+*/
 
 div.middle div.buttons{
     width: 100%px;
@@ -136,22 +141,25 @@ div.middle div p{
 
 /*This is part of keeping the footer at the bottom*/
 #container{
-    min-height: 100%;
+    /* THIS solves the need to have a space for the footer, 
+    better than using margin-top when min-heignt is 100%*/
+    min-height: calc(100% - 85px);
     position: relative;
 }
 
 #main{
     overflow: auto;
 }
+
 /*Footer at the bottom*/
 
 footer{
     background-color: #f2f2f2;
     
     /*Footer at the bottom*/
-    position: absolute; /* Without this, the footer ends BEHIND the container, can't click on links*/
+    position: absolute; /* Without this, the footer ends BEHIND 
+    the container, can't click on links*/
     height: 85px;
-    margin-top: -85px;
     width: 100%;
 }
 

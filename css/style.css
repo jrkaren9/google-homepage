@@ -32,8 +32,26 @@ nav ul li a{
     font-size: 13px;
 }
 
-li.btn1{
+li#btn1{
     background-image: url("../images/appicon.png");
+    background-size: cover;  
+    width: 25px;
+    height: 25px;
+}
+
+li[id]{
+    margin: 0 10px;
+}
+
+li#btn2{
+    background-image: url("../images/bellicon.png");
+    background-size: cover;  
+    width: 25px;
+    height: 25px;
+}
+
+li#btn3{
+    background-image: url("../images/usericon.png");
     background-size: cover;  
     width: 25px;
     height: 25px;
@@ -47,7 +65,7 @@ a{
 
 div.middle {
     clear: both;
-    width: 500px;
+    width: 700px;
     text-align: center;
     margin: auto;
 
@@ -60,13 +78,13 @@ div.middle {
 
 div.middle div img{
     display: block;
-    width: 400px;
+    width: 320px;
     margin: auto;
-    padding: 0 0 10px 0;
+    padding: 0 0 20px 0;
 }
 
 div.searchbar input[type="text"]{
-    width: 480px;
+    width: 600px;
     height: 45px;
     margin: 0px auto;
     border-radius: 0px;

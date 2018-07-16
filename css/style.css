@@ -83,7 +83,7 @@ div.middle div img{
     display: block;
     width: 320px;
     margin: auto;
-    padding: 0 0 20px 0;
+    padding: 0 0 25px 0;
 }
 
 div.searchbar input[type="text"]{
@@ -119,18 +119,25 @@ div.middle div.buttons{
     margin: auto;
 }
 
-div.middle div.buttons input[type="submit"]{
+div.buttons input{
     margin: 0px 4px;
     padding: 0 15px;
     height: 36px;
     line-height: 26px;
     border-radius: 0px;
     border: 0px;
+    background-color: #f1eded;
 
     /* font style*/
     color: #717179;
     font-size: 13px;
     font-weight: 600;
+}
+
+div.buttons input:hover{
+    background-color: #f0f0f0;
+    outline: solid 1px #acacac;
+    color: #000;
 }
 
 div.middle div p{

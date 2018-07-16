@@ -27,8 +27,9 @@ nav ul li{
 }
 
 nav ul li a{
+    color: #000;
     display: block;
-    padding: 5px 5px;
+    padding: 5px 8px;
     font-size: 13px;
 }
 
@@ -46,8 +47,9 @@ li[id]{
 li#btn2{
     background-image: url("../images/bellicon.png");
     background-size: cover;  
-    width: 25px;
-    height: 25px;
+    margin-top: 2px;
+    width: 20px;
+    height: 20px;
 }
 
 li#btn3{
@@ -57,8 +59,14 @@ li#btn3{
     height: 25px;
 }
 
+/* ----- LINKS GENERAL BEHAVIOUS ----- */
+
 a{
     text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
 }
 
 /* ----- MAIN INFO ----- */
